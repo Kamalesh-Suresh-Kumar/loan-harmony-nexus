@@ -83,8 +83,8 @@ Ensure you have Python 3.9+ installed natively.
 cd ml-model
 pip install -r requirements.txt
 uvicorn app:app --reload
-# Note: Ensure the entry file maps to your python script (typically app.py)
 ```
+> Note: Ensure the entry file maps to your python script (typically app.py)
 
 ## Features Roadmap
 - [x] Integrate Mongoose ORM completely for the Loan Database.
