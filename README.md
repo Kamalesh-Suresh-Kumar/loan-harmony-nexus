@@ -14,6 +14,8 @@ The project is structured into three main microservices/modules functioning harm
 
 > For tutorial refer [Tutorial Video](./Demo.mp4)
 
+---
+
 ### 1. Frontend Client
 A modern, highly-responsive administrative dashboard and client portal built for premium aesthetics and functionality.
 
