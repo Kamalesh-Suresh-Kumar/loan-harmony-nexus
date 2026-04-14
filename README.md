@@ -60,6 +60,13 @@ A dedicated microservice strictly built to evaluate application reliability usin
 
 ## Setup & Run Instructions
 
+> Select the location and run the following commands
+
+### 0. Setup
+```bash
+git clone https://github.com/Kamalesh-Suresh-Kumar/loan-harmony-nexus.git
+```
+
 ### 1. Frontend
 ```bash
 cd frontend
