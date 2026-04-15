@@ -82,6 +82,24 @@ The Frontend runs natively via Vite.
 ### 2. Backend
 Ensure you have a MongoDB instance running locally or via Atlas.
 
+**Environment Variables Setup:**
+Before running the backend, create a `.env` file inside the `backend/` folder:
+```bash
+# backend/.env
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+SECRET_KEY=your_secret_key_for_jwt
+```
+
+| Key | Description |
+|---|---|
+| `MONGO_URI` | Your MongoDB connection string. Use `mongodb://localhost:27017/loanharmonydb` for local, or get one from [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) |
+| `PORT` | Port for the main backend server (default: `5000`) |
+| `SECRET_KEY` | A long random string used to sign JWT tokens. Generate one with: `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |
+
+> Never commit your `.env` file to GitHub. It is already listed in `.gitignore`.
+
 **Step 1 — Install & start the main backend** (Port 5000):
 ```bash
 cd backend
