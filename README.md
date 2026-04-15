@@ -96,7 +96,7 @@ SECRET_KEY=your_secret_key_for_jwt
 |---|---|
 | `MONGO_URI` | Your MongoDB connection string. Use `mongodb://localhost:27017/loanharmonydb` for local, or get one from [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) |
 | `PORT` | Port for the main backend server (default: `5000`) |
-| `SECRET_KEY` | A long random string used to sign JWT tokens. Generate one with: `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |
+| `SECRET_KEY` | A long random string used to sign JWT tokens. A generator script is already included — run `node key.js` from inside the `backend/` folder and copy the output. |
 
 > Never commit your `.env` file to GitHub. It is already listed in `.gitignore`.
 
