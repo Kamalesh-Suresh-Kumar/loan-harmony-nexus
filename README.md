@@ -81,12 +81,22 @@ The Frontend runs natively via Vite.
 
 ### 2. Backend
 Ensure you have a MongoDB instance running locally or via Atlas.
+
+**Step 1 — Install & start the main backend** (Port 5000):
 ```bash
 cd backend
 npm install
 npm run dev
 ```
 The backend initializes under `nodemon`.
+
+**Step 2 — Install & start the OTP server** (Port 5001, open a new terminal):
+```bash
+cd backend/server
+npm install
+node index.js
+```
+> The `backend/server/` folder is a separate mini-server for OTP email handling. It has its **own** `package.json` and must be installed and started independently.
 
 ### 3. ML Model Service
 Ensure you have Python 3.9+ installed natively.
